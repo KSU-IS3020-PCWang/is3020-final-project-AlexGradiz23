@@ -1,0 +1,4 @@
+Category,AvailableUnits,UnitPrice,LeaseRate,ContactNumber
+Residential,2,250000.0,0.0,N/A
+Business,3,500000.0,4500.0,N/A
+Administrative,10,0.0,0.0,555-555
