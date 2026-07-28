@@ -82,7 +82,7 @@ def save_data(filename, inventory):
             # Write data rows
             for category, data in inventory.items():
                 writer.writerow([
-                    category,
+                    categories,
                     data["available_units"],
                     data["price_per_unit"],
                     data["lease_rate"],
@@ -144,7 +144,7 @@ def process_residential(inventory, purchased_types):
 
         if quantity <= 0:
             print("Quantity must be greater than zero.")
-            return
+        return
 
         if quantity > res_data["available_units"]:
             print(f"Transaction declined. Only {res_data['available_units']} units available.")
@@ -264,7 +264,7 @@ def main():
     while True:
         print("\n--- MAIN MENU ---")
         print("1. View Property Registry Availability")
-        print("2. Purchase Residential Property")
+        print("2. Purchase Residential Propertie")
         print("3. Procure Business Property (Buy/Lease)")
         print("4. Administrative Direct Consultation")
         print("5. Save and Exit")
