@@ -18,7 +18,7 @@ DATA_FILE = "registry_data.csv"
 # Headers used for the CSV file structure
 CSV_HEADERS = ["Category", "AvailableUnits", "UnitPrice", "LeaseRate", "ContactNumber"]
 
-# Default dataset used if the CSV file does not exist
+# Default dataset used if the CSV file doesn't exist
 DEFAULT_INVENTORY = {
     "Residential": {
         "available_units": 5,
